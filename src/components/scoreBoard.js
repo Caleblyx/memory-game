@@ -1,10 +1,13 @@
 import { React, useState, useEffect } from "react";
 
-const ScoreBoard = () => {
+const ScoreBoard = ({
+    currentScore,
+    personalRecord
+}) => {
     return (
         <div className="score-board">
-            <div className="score-card">Current Score:</div>
-            <div className="score-card">Max Score: </div>
+            <div className="score-card">Current Score: {currentScore}</div>
+            <div className="score-card">Personal Record: {personalRecord}</div>
         </div>
     )
 
