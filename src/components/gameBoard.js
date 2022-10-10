@@ -29,20 +29,12 @@ const GameBoard = () => {
     const selectMemoryCard = (e, uid) => {
         const selectedCard = memoryCards.find(card => card.uid == uid);
         if (selectedCard.isSelectedBefore) {
-            /*
-            setPersonalRecord(Math.max(currentScore, personalRecord));
-            setCurrentScore(0);
-            */
             const updatedMemoryCards = memoryCards.map(card => {
                 return {...card, isSelectedBefore: false};
             })
             setMemoryCards(updatedMemoryCards);
 
         } else {
-            /*
-            setCurrentScore(prev => prev+1);
-            setPersonalRecord(Math.max(currentScore+1, personalRecord));
-            */
             const updatedMemoryCards = memoryCards.map(card => {
                 console.log("Card Selected!");
                 if (card.uid == uid) {
