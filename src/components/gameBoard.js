@@ -61,9 +61,17 @@ const GameBoard = () => {
     })
     
     return (
-        <div className="game-board">
-            <ScoreBoard currentScore={currentScore} personalRecord={personalRecord}/>
-            <MemoryBoard memoryCards={memoryCards} selectMemoryCard={selectMemoryCard}/>
+        <div class="pip">
+            <div class="pipfront">
+                <div class="screen-panel">
+                    <div class="top">
+                        <div class="top-panel"></div>
+                    </div>
+                    <MemoryBoard memoryCards={memoryCards} selectMemoryCard={selectMemoryCard}/>
+                </div>
+                <ScoreBoard currentScore={currentScore} personalRecord={personalRecord}/>
+            </div>
+                
         </div>
     )
 }

@@ -6,8 +6,12 @@ const ScoreBoard = ({
 }) => {
     return (
         <div className="score-board">
-            <div className="score-card">Current Score: {currentScore}</div>
-            <div className="score-card">Personal Record: {personalRecord}</div>
+            <div className="score-card">Current Score: 
+                <div>{currentScore}</div>
+            </div>
+            <div className="score-card">Personal Record: 
+                <div>{personalRecord}</div>
+            </div>
         </div>
     )
 
